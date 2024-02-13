@@ -21,6 +21,12 @@ public class point {
         System.out.println("Y = " + y);
     }
 
+    // method that takes params
+    point(int a, int b) {
+        x = a;
+        y = b;
+    }
+
     // Main class
     public static void main(String[] args) {
         // new object
@@ -28,5 +34,12 @@ public class point {
 
         // afficher ce new oject
         p.afficher();
+
+        // give off the params
+        int a = 12;
+        int b = 12;
+
+        point t = new point(a, b);
+        t.afficher();
     }
 }
