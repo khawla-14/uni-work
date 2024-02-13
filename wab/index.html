@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document Html</title>
+</head>
+
+<body style="font-family: sans-serif; background-color: #f2f2f2;">
+    <h1 id="title">Hello!</h1>
+    <p>Do adipisicing veniam do nulla magna veniam <br> anim amet tempor do.</p>
+
+    <button onclick="change()"
+        style="border: none; color: #ffffff; cursor: pointer; background-color: #323232; padding: 7px 10px ; border-radius: 3px; ">
+        Change the title</button>
+    <br>
+    <br>
+
+    <b>Input your text: <br></b>
+
+    <input id="input" type="text" placeholder="write your text"
+        style="outline: none; width: 150px; padding: 5px;margin-top: 20px;">
+    <button onclick="write()"
+        style="border: none; color: #ffffff; cursor: pointer; background-color: #000000; padding: 7px 10px ; border-radius: 3px; ">click
+        me</button>
+    <br>
+    <p id="text"></p>
+    <br>
+    <a href="youtube.com" style="font-size: small; color: #dd9d73;"><i>Go to youtube</i></a>
+
+    <script>
+        function change() {
+            let title = document.getElementById("title");
+
+            if (title.innerHTML == "Hi!") {
+                title.innerHTML = "Hello!";
+            } else if (title.innerHTML == "Hello!") {
+                title.innerHTML = "Hi!";
+            }
+        }
+
+        function write() {
+            let input = document.getElementById("input").value;
+            document.getElementById("text").innerText = input;
+        }
+    </script>
+</body>
+
+</html>
