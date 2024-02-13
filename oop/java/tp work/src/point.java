@@ -42,4 +42,5 @@ public class point {
         point t = new point(a, b);
         t.afficher();
     }
+    scanner.close(); 
 }
