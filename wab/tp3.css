@@ -1,0 +1,43 @@
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    padding: 10px 40px;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+
+table {
+    font-size: 14px;
+}
+
+tr {
+    background-color: #f0f2f5;
+}
+
+td,
+th {
+    padding: 10px 15px;
+
+}
+
+th {
+    font-weight: bold;
+}
+
+.col-1 {
+    cursor: pointer;
+}
+
+.col-2 {
+    padding-right: 50px;
+}
