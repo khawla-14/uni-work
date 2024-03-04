@@ -1,6 +1,7 @@
-#main,
+
 #content,
 #footer,
+#menu,
 #entete {
     padding: 20px;
 }
@@ -22,7 +23,7 @@
     background-color: #ff2266;
 }
 
-#contenu {
+#content {
     margin-left: 245px;
     background-color: #9966FF;
 }
