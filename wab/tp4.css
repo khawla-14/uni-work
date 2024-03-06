@@ -1,4 +1,3 @@
-
 #content,
 #footer,
 #menu,
@@ -13,12 +12,14 @@
 
 #main {
     max-width: 960px;
+    height: 80vh;
     margin: auto;
+    display: flex;
+    contain: content;
 }
 
 
 #menu {
-    float: left;
     width: 240px;
     background-color: #ff2266;
 }
@@ -26,6 +27,8 @@
 #content {
     margin-left: 245px;
     background-color: #9966FF;
+    width: 100%;
+    height: 100%;
 }
 
 #footer {
