@@ -1,22 +1,33 @@
 package TP4;
 
 public class person {
-    protected String name;      // it is private but the extendanded casses ca access it
-    protected String lastName;
-    protected int age;
+    // les attributs privés
+    private String Nom;
+    private String Prenom;
+    private int Age;
 
-    public person (String name, String lastName, int age){
-        //
+    public person(String N, String P, int A) {
+        Nom = N;
+        Prenom = P;
+        Age = A;
     }
 
+    // l es méthodes publle
+    public void manger() {
+        System.out.println("i eat");
 
-    //private methods fro the person class
-    private void method1(){}
-    private void method2(){}
-    private void method3(){}
+    };
 
+    public void marcher() {
+        System.out.println("i walk");
 
-    // WHEN using two constructors we use SUPER() to cal it of the mere class
-    // THis() in the son class is used in the 2nd constructor to cal the first constructor in the same class, 
-    // in our case the first one is amready callling the person class
+    };
+
+    public void dormir() {
+        System.out.println("i sleep");
+    };
+
+    public void courir() {
+        System.out.println("i run");
+    };
 }
